@@ -1,0 +1,101 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    /* clrs */
+    --bg-clr: #222222;
+    --elmnt-bg: #383833;
+    --elmnt-bg-active: #6a6a65;
+    --white: #ffff;
+
+    /* font stuff */
+    --ff-base: "Mona Sans", sans-serif;
+
+}
+
+body {
+
+    min-height: 100vh;
+    display: grid;
+    align-content: center;
+    gap: 4rem;
+    background-color: var(--bg-clr);
+}
+
+main {
+    margin: auto;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.btn {
+    width: 100%;
+    max-width: 200px;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    text-transform: capitalize;
+    border-radius: 0.25em;
+    border: none;
+    outline: none;
+    background-color: var(--elmnt-bg);
+    color: var(--white);
+    transition: max-width .5s cubic-bezier(0.34, 1.56, 0.64, 1), background-color .25s ease;
+    cursor: pointer;
+}
+
+.btn:active {
+    background-color: var(--elmnt-bg-active);
+}
+
+
+.counter {
+    padding: 1.5rem 2rem;
+    border-radius: 0.25em;
+    font-size: 2rem;
+    text-transform: capitalize;
+    text-align: center;
+    transition: width 0.2s ease;
+    background-color: var(--elmnt-bg);
+    color: var(--white);
+    cursor: pointer;
+    transition: background-colo .25s ease;
+}
+
+.counter:active {
+    background-color: var(--elmnt-bg-active);
+}
+
+/* footer */
+
+.attribution {
+    color: var(--white);
+    font-size: 1.2rem;
+    text-align: center;
+
+}
+
+.attribution p {
+    margin-bottom: .2rem;
+}
+
+.attribution a {
+    margin-left: .2rem;
+    color: var(--white);
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: color .2s ease;
+}
+
+.attribution a:hover {
+    color: var(--elmnt-bg);
+}
