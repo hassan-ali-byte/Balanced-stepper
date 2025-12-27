@@ -81,7 +81,7 @@ This project was built to practice:
 
 🌐 Live Demo
 
-[Click here to view live demo](#) _(replace with actual link)_
+[Click here to view live demo](https://balanced-stepper-js.vercel.app/) 
 
 ---
 
